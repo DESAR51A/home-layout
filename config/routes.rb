@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'services', controller: :static, action: :services, alias: 'services'
+
+ get 'about', controller: :static, action: :about, alias: 'about'
+
+  #get 'home/index'
+  root 'home#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
